@@ -190,6 +190,28 @@
             "bearerAuth": []
           }
         ],
+        "parameters": [
+          {
+            "name": "order",
+            "in": "query",
+            "description": "Order products",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": ["asc", "desc"]
+            }
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "description": "Order products",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": ["accountId"]
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Successful response"
